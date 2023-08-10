@@ -41,7 +41,7 @@ public class Task3 {
 			System.out.print("Unusuality of requests for "+i+" days being below or above average is ");
 			if(Math.abs((2*i-7)/Math.sqrt(7)) < 2) {
 				System.out.println("not unusual with z-score of "+(2*i-7)/Math.sqrt(7));
-			} else if(Math.abs((2*i-7)/Math.sqrt(7)) > 2 || Math.abs((2*i-7)/Math.sqrt(7)) < 3) {
+			} else if(Math.abs((2*i-7)/Math.sqrt(7)) > 2 && Math.abs((2*i-7)/Math.sqrt(7)) < 3) {
 				System.out.println("somewhat unusual with z-score of "+(2*i-7)/Math.sqrt(7));
 			} else {
 				System.out.println("very unusual (outlier) with z-score of "+(2*i-7)/Math.sqrt(7));
